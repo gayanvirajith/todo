@@ -1,5 +1,14 @@
-<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title>Gayan Virajith - Todo app using angular and firebase</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <style type="text/css"></style> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.a72899b7.css">  <body ng-app="todoApp"> <!--[if lt IE 7]>
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title>Gayan Virajith - Todo app using angular and firebase</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <style type="text/css"></style> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.435dd441.css">  <body ng-app="todoApp"> <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]--> <div class="splash" ng-cloak=""> <h2>Loading</h2> </div> <div ng-controller="MainCtrl" ng-cloak=""> <ul> <li ng-repeat="item in awesomeThings">{{item}}</li> </ul> </div> <!--[if lt IE 9]>
     <script src="scripts/oldieshim.9ea1d182.js"></script>
-    <![endif]--> <script src="scripts/vendor.67abe758.js"></script> <script src="scripts/scripts.018b47fe.js"></script>  
+    <![endif]--> <script src="scripts/vendor.67abe758.js"></script> <script type="text/javascript">/* To avoid render blocking css */
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '//fonts.googleapis.com/css?family=Open+Sans';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+              webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);</script> <script src="scripts/scripts.018b47fe.js"></script>  
