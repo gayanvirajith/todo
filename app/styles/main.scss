@@ -1,6 +1,34 @@
+@import "scss/helpers/variables";
+@import "scss/helpers/all";
+@import "scss/base/reset";
+@import "scss/base/type";
+
+/*
+ *
+ * Enable google webkit font smoothing
+ * Reset to border-box
+ * Setting up font family
+ */
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  //change the default tap highlight color, when you tap on mobile device
+  -webkit-tap-highlight-color: transparent;
+}
+
+*, *:after, *:before {
+  @include box-sizing(border-box);
+}
+
 body {
-  font-size: 100%;
-  font-family: "Open Sans", sans-serif;
+  font: {
+    size: 100%;
+    family: $font-family-base; // variables inside partials > _variables.scss
+  }
+  color: $gray-dark;
+  background: $main-bg-color;
 }
 
 /* 

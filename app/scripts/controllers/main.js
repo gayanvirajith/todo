@@ -10,8 +10,8 @@
 angular.module('todoApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+      { name: 'HTML5 Boilerplate', done: false},
+      { name: 'AngularJS', done: false },
+      { name: 'Karma', done: false }
     ];
   });

@@ -1,1 +1,0 @@
-"use strict";angular.module("todoApp",["ngAnimate","ngAria","ngSanitize","ngTouch"]),angular.module("todoApp").controller("MainCtrl",["$scope",function(a){a.awesomeThings=["HTML5 Boilerplate","AngularJS","Karma"]}]);

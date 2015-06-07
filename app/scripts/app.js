@@ -13,5 +13,6 @@ angular
     'ngAnimate',
     'ngAria',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngMaterial'
   ]);
