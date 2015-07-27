@@ -14,5 +14,7 @@ angular
     'ngAria',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial'
+    'ngMaterial',
+    'app.main',
+    'toDo'
   ]);

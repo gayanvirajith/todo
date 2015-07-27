@@ -1,8 +1,8 @@
-<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title>Gayan Virajith - Todo app using angular and firebase</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <style type="text/css"></style> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.3638dbad.css"> <link rel="stylesheet" href="styles/main.4d9330aa.css">  <body ng-app="todoApp"> <!--[if lt IE 7]>
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title>Gayan Virajith - Todo app using angular and firebase</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <style type="text/css"></style> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.81800a1a.css"> <link rel="stylesheet" href="styles/main.4d9330aa.css">  <body ng-app="todoApp"> <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <div class="splash" ng-cloak=""> <h2>Loading</h2> </div> <md-toolbar md-scroll-shrink ng-clock=""> <div class="md-toolbar-tools" ng-clock=""> <h3 ng-clock=""> <span ng-clock="">Todo List</span> </h3> </div> </md-toolbar> <md-list ng-controller="MainCtrl" ng-cloak=""> <md-list-item ng-repeat="item in awesomeThings"> <p> {{ item.name }} </p> <md-checkbox class="md-secondary" ng-model="item.done"></md-checkbox> <md-divider inset></md-divider> </md-list-item> </md-list> <!--[if lt IE 9]>
-    <script src="scripts/oldieshim.9ea1d182.js"></script>
-    <![endif]--> <script src="scripts/vendor.b50dfdea.js"></script> <script type="text/javascript">/* To avoid render blocking css */
+    <![endif]--> <div class="splash" ng-cloak=""> <h2>Loading...</h2> </div> <div ng-controller="MainCtrl"> {{ awesomeThings }} </div> <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.be696afb.js"></script>
+    <![endif]--> <script src="scripts/vendor.53602a89.js"></script> <script type="text/javascript">/* To avoid render blocking css */
       var cb = function() {
         var l = document.createElement('link'); l.rel = 'stylesheet';
         l.href = '//fonts.googleapis.com/css?family=Open+Sans';
@@ -11,4 +11,4 @@
       var raf = requestAnimationFrame || mozRequestAnimationFrame ||
               webkitRequestAnimationFrame || msRequestAnimationFrame;
       if (raf) raf(cb);
-      else window.addEventListener('load', cb);</script> <script src="scripts/scripts.a70b0737.js"></script>  
+      else window.addEventListener('load', cb);</script> <script src="scripts/scripts.7ac230a8.js"></script>  
